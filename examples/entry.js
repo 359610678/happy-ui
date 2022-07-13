@@ -67,3 +67,5 @@ new Vue({ // eslint-disable-line
   ...entry,
   router
 }).$mount('#app');
+
+Element.JsDialog.router = router;

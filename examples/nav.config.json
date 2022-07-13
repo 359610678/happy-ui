@@ -307,6 +307,10 @@
             {
               "path": "/drawer",
               "title": "Drawer 抽屉"
+            },
+            {
+              "path": "/dialog-wrapper",
+              "title": "DialogWrapper"
             }
           ]
         }
@@ -621,6 +625,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/dialog-wrapper",
+              "title": "DialogWrapper"
             }
           ]
         }
@@ -935,6 +943,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/dialog-wrapper",
+              "title": "DialogWrapper"
             }
           ]
         }
@@ -1249,6 +1261,10 @@
             {
               "path": "/drawer",
               "title": "Drawer"
+            },
+            {
+              "path": "/dialog-wrapper",
+              "title": "DialogWrapper"
             }
           ]
         }
