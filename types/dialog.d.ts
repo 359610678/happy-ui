@@ -60,3 +60,11 @@ export declare class ElDialog extends ElementUIComponent {
 
   $slots: DialogSlots
 }
+
+export declare class  ElJsDialog {
+  static router: any
+  static store: any
+  constructor(view: any, options: any)
+    show(): void
+    hide(): void
+}

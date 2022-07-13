@@ -1,0 +1,31 @@
+@import "mixins/mixins";
+@import "common/var";
+
+.dialog-wrapper--small ,.dialog-wrapper--medium ,.dialog-wrapper--large {
+  .el-dialog {
+    .el-dialog__body {
+      padding: 0 20px;
+      min-height: 100px;
+      max-height: 500px;
+      overflow: auto;
+      @include scroll-bar()
+    }
+  }
+}
+.dialog-wrapper--small {
+  .el-dialog {
+    width: 480px;
+  }
+}
+
+.dialog-wrapper--medium {
+  .el-dialog {
+    width: 600px;
+  }
+}
+
+.dialog-wrapper--large {
+  .el-dialog {
+    width: 900px;
+  }
+}

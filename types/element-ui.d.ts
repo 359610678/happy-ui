@@ -22,7 +22,7 @@ import { ElCollapseItem } from './collapse-item'
 import { ElColorPicker } from './color-picker'
 import { ElContainer } from './container'
 import { ElDatePicker } from './date-picker'
-import { ElDialog } from './dialog'
+import { ElDialog, ElJsDialog } from './dialog'
 import { ElDropdown } from './dropdown'
 import { ElDropdownItem } from './dropdown-item'
 import { ElDropdownMenu } from './dropdown-menu'
@@ -88,6 +88,7 @@ import { ElSpinner } from './spinner'
 import { ElDescriptions } from './descriptions'
 import { ElDescriptionsItem } from './descriptions-item'
 import { ElResult } from './result'
+import { ElDialogWrapper } from './dialog-wrapper'
 
 export interface InstallationOptions {
   locale: any,
@@ -193,6 +194,8 @@ export class DatePicker extends ElDatePicker {}
 
 /** Dialog Component */
 export class Dialog extends ElDialog {}
+
+export class JsDialog extends ElJsDialog {}
 
 /** Dropdown Component */
 export class Dropdown extends ElDropdown {}
@@ -376,3 +379,5 @@ export class DescriptionsItem extends ElDescriptionsItem {}
 
 /** Result Component */
 export class Result extends ElResult {}
+/** DialogWrapper Component */
+export class DialogWrapper extends ElDialogWrapper {}
