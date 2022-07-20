@@ -89,6 +89,7 @@ import Descriptions from '../packages/descriptions/index.js';
 import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
 import DialogWrapper from '../packages/dialog-wrapper/index.js';
+import DrawerWrapper from '../packages/drawer-wrapper/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 
@@ -177,6 +178,7 @@ const components = [
   DescriptionsItem,
   Result,
   DialogWrapper,
+  DrawerWrapper,
   CollapseTransition
 ];
 
@@ -219,7 +221,6 @@ export default {
   CollapseTransition,
   Loading,
   Pagination,
-  JsDialog: Dialog.Dialog,
   Dialog,
   Autocomplete,
   Dropdown,
@@ -306,5 +307,6 @@ export default {
   Descriptions,
   DescriptionsItem,
   Result,
-  DialogWrapper
+  DialogWrapper,
+  DrawerWrapper
 };

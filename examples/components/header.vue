@@ -282,16 +282,6 @@
 </style>
 <template>
   <div class="headerWrapper">
-    <div id="v3-banner" v-if="isHome">
-      <template v-if="lang === 'zh-CN'">
-        您正在浏览基于 Vue 2.x 的 Element UI 文档;
-        <a href="https://element-plus.org/#/zh-CN">点击这里</a> 查看 Vue 3.x 的升级版本
-      </template>
-      <template v-else>
-        You’re browsing the documentation of Element UI for Vue 2.x version.
-        <a href="https://element-plus.org">Click here</a> for Vue 3.x version
-      </template>
-    </div>
     <header class="header" ref="header">
       <div class="container">
         <h1><router-link :to="`/${ lang }`">
@@ -370,30 +360,6 @@
               </el-dropdown-menu>
             </el-dropdown>
           </li>
-
-          <!-- 语言选择器 -->
-          <li class="nav-item lang-item">
-            <el-dropdown
-              trigger="click"
-              class="nav-dropdown nav-lang"
-              :class="{ 'is-active': langDropdownVisible }">
-              <span>
-                {{ displayedLang }}
-                <i class="el-icon-arrow-down el-icon--right"></i>
-              </span>
-              <el-dropdown-menu
-                slot="dropdown"
-                class="nav-dropdown-list"
-                @input="handleLangDropdownToggle">
-                <el-dropdown-item
-                  v-for="(value, key) in langs"
-                  :key="key"
-                  @click.native="switchLang(key)">
-                  {{ value }}
-                </el-dropdown-item>
-              </el-dropdown-menu>
-            </el-dropdown>
-          </li>
         </ul>
       </div>
     </header>
@@ -417,7 +383,6 @@
         versions: [],
         version,
         verDropdownVisible: true,
-        langDropdownVisible: true,
         langs: {
           'zh-CN': '中文',
           'en-US': 'English',
@@ -437,9 +402,6 @@
     computed: {
       lang() {
         return this.$route.path.split('/')[1] || 'zh-CN';
-      },
-      displayedLang() {
-        return this.langs[this.lang] || '中文';
       },
       langConfig() {
         return compoLang.filter(config => config.lang === this.lang)[0]['header'];
@@ -468,19 +430,8 @@
         if (version === this.version) return;
         location.href = `${ location.origin }/${ this.versions[version] }/${ location.hash } `;
       },
-
-      switchLang(targetLang) {
-        if (this.lang === targetLang) return;
-        localStorage.setItem('ELEMENT_LANGUAGE', targetLang);
-        this.$router.push(this.$route.path.replace(this.lang, targetLang));
-      },
-
       handleVerDropdownToggle(visible) {
         this.verDropdownVisible = visible;
-      },
-
-      handleLangDropdownToggle(visible) {
-        this.langDropdownVisible = visible;
       }
     },
 

@@ -6,10 +6,10 @@
 
 <s-dialog-wrapper size='large' v-if='visible' :title='title' @confirm='handleConfirm' @cancel='handleCancel'>
   hello
-  <slot slot='footer'>
+  <div slot='footer'>
     <el-button @click='handleConfirm'>点击确认</el-button>
     <el-button @click='handleCancel'>点击关闭</el-button>
-  </slot>
+  </div>
 </s-dialog-wrapper>
 <script>
   export default {

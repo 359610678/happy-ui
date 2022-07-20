@@ -89,6 +89,7 @@ import { ElDescriptions } from './descriptions'
 import { ElDescriptionsItem } from './descriptions-item'
 import { ElResult } from './result'
 import { ElDialogWrapper } from './dialog-wrapper'
+import { ElDrawerWrapper } from './drawer-wrapper'
 
 export interface InstallationOptions {
   locale: any,
@@ -381,3 +382,6 @@ export class DescriptionsItem extends ElDescriptionsItem {}
 export class Result extends ElResult {}
 /** DialogWrapper Component */
 export class DialogWrapper extends ElDialogWrapper {}
+
+/** DrawerWrapper Component */
+export class DrawerWrapper extends ElDrawerWrapper {}
