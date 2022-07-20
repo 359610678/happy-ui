@@ -87,5 +87,6 @@
   "descriptions": "./packages/descriptions/index.js",
   "descriptions-item": "./packages/descriptions-item/index.js",
   "result": "./packages/result/index.js",
-  "dialog-wrapper": "./packages/dialog-wrapper/index.js"
+  "dialog-wrapper": "./packages/dialog-wrapper/index.js",
+  "drawer-wrapper": "./packages/drawer-wrapper/index.js"
 }
