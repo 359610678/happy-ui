@@ -57,6 +57,7 @@ export default {
   install,
   CollapseTransition,
   Loading,
+  JsDialog: Dialog.Dialog,
 {{list}}
 };
 `;

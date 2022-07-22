@@ -7,7 +7,7 @@ export default {
     return {
       currentView: null,
       target: document.body,
-      closeOnClickModel: false
+      closeOnClickModal: false
     };
   },
   methods: {
