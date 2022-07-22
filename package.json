@@ -1,7 +1,7 @@
 {
-  "name": "happy-ui",
+  "name": "happys-ui",
   "version": "1.00.0",
-  "description": "A Component Library for Vue.js. copy from element-ui",
+  "description": "基于element-ui二次封装的vue组件",
   "main": "lib/element-ui.common.js",
   "files": [
     "lib",

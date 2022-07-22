@@ -221,6 +221,7 @@ export default {
   CollapseTransition,
   Loading,
   Pagination,
+  JsDialog: Dialog.Dialog,
   Dialog,
   Autocomplete,
   Dropdown,

@@ -45,7 +45,7 @@ export default class Dialog {
   }
 
   static closeAll() {
-    instances.array.forEach(element => {
+    instances.forEach(element => {
       element.$off();
       element.hide();
     });

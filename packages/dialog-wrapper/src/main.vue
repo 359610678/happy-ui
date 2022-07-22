@@ -1,6 +1,9 @@
 <template>
   <el-dialog :class="['dialog-wrapper',size?'dialog-wrapper--'+size:'']" :title="title" :visible="true"
-    :close-on-click-model="false" @close="doCancel">
+    :close-on-click-modal="false" @close="doCancel">
+    <template slot="title" v-if="$slots.title">
+      <slot name="title"></slot>
+    </template>
     <slot></slot>
     <slot v-if="$slots.footer" name="footer" slot="footer"></slot>
     <template v-else slot="footer">

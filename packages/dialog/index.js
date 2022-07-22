@@ -6,4 +6,5 @@ ElDialog.install = function(Vue) {
   Vue.component(ElDialog.name, ElDialog);
 };
 ElDialog.Dialog = Dialog;
+
 export default ElDialog;
