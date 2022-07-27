@@ -88,5 +88,6 @@
   "descriptions-item": "./packages/descriptions-item/index.js",
   "result": "./packages/result/index.js",
   "dialog-wrapper": "./packages/dialog-wrapper/index.js",
-  "drawer-wrapper": "./packages/drawer-wrapper/index.js"
+  "drawer-wrapper": "./packages/drawer-wrapper/index.js",
+  "list-view": "./packages/list-view/index.js"
 }

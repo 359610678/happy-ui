@@ -1,0 +1,74 @@
+@import "common/var";
+
+.s-list {
+  .s-list__toolbar {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .s-list__selected {
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 4px 12px;
+    font-size: $--button-small-font-size;
+  }
+
+  .s-list__num,
+  .s-list__cancel {
+    color: $--color-primary;
+    margin: 0 5px;
+  }
+
+  .s-list__cancel {
+    cursor: pointer;
+  }
+
+  .s-list__actions {
+    flex: 1;
+  }
+
+  .s-list__pagination {
+    padding: 10px 0;
+    text-align: right;
+
+    .el-pagination__total {
+      float: left;
+    }
+  }
+
+  &.is-fixed {
+    .el-table {
+      margin-bottom: 50px;
+    }
+
+    .s-list__pagination {
+      position: fixed;
+      bottom: 0;
+      background: #fff;
+      width: 100%;
+      left: 0;
+      padding: 10px 20px;
+      border-top: $--border-base;
+    }
+  }
+
+  .el-loading-mask {
+    background-color: transparent;
+  }
+
+  .el-table {
+    font-size: 12px;
+
+    th {
+      color: #989A9C;
+      background: #F2F2F2;
+      padding: 0;
+    }
+  }
+
+  .configurable-btn {
+    margin-left: 10px;
+  }
+}
