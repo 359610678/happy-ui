@@ -92,6 +92,9 @@ import DialogWrapper from '../packages/dialog-wrapper/index.js';
 import DrawerWrapper from '../packages/drawer-wrapper/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import CommonUtil from 'element-ui/src/utils/CommonUtil.js';
+import LocalStorageUtil from 'element-ui/src/utils/LocalStorageUtil.js';
+import ListView from '../packages/list-view/index.js';
 
 const components = [
   Pagination,
@@ -179,7 +182,10 @@ const components = [
   Result,
   DialogWrapper,
   DrawerWrapper,
-  CollapseTransition
+  CollapseTransition,
+  CommonUtil,
+  LocalStorageUtil,
+  ListView
 ];
 
 const install = function(Vue, opts = {}) {
@@ -309,5 +315,6 @@ export default {
   DescriptionsItem,
   Result,
   DialogWrapper,
-  DrawerWrapper
+  DrawerWrapper,
+  ListView
 };

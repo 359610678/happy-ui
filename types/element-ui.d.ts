@@ -90,6 +90,8 @@ import { ElDescriptionsItem } from './descriptions-item'
 import { ElResult } from './result'
 import { ElDialogWrapper } from './dialog-wrapper'
 import { ElDrawerWrapper } from './drawer-wrapper'
+import { ElListView } from './list-view'
+import { ElCommonUtil, ElLocalStorageUtil } from './util'
 
 export interface InstallationOptions {
   locale: any,
@@ -385,3 +387,11 @@ export class DialogWrapper extends ElDialogWrapper {}
 
 /** DrawerWrapper Component */
 export class DrawerWrapper extends ElDrawerWrapper {}
+
+/** ListView Component */
+export class ListView extends ElListView {}
+
+/* util Component */
+export class CommonUtil extends ElCommonUtil {}
+
+export class LocalStorageUtil extends ElLocalStorageUtil {}
