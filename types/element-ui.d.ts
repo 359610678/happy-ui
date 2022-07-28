@@ -91,7 +91,7 @@ import { ElResult } from './result'
 import { ElDialogWrapper } from './dialog-wrapper'
 import { ElDrawerWrapper } from './drawer-wrapper'
 import { ElListView } from './list-view'
-import { ElCommonUtil, ElLocalStorageUtil } from './util'
+import { ElCommonUtil, ElLocalStorageUtil, ElDateUtil, ElNumberUtil, ElSessionStorageUtil } from './util'
 
 export interface InstallationOptions {
   locale: any,
@@ -395,3 +395,9 @@ export class ListView extends ElListView {}
 export class CommonUtil extends ElCommonUtil {}
 
 export class LocalStorageUtil extends ElLocalStorageUtil {}
+
+export class DateUtil extends ElDateUtil {}
+
+export class NumberUtil extends ElNumberUtil {}
+
+export class SessionStorageUtil extends ElSessionStorageUtil {}

@@ -90,11 +90,15 @@ import DescriptionsItem from '../packages/descriptions-item/index.js';
 import Result from '../packages/result/index.js';
 import DialogWrapper from '../packages/dialog-wrapper/index.js';
 import DrawerWrapper from '../packages/drawer-wrapper/index.js';
+import ListView from '../packages/list-view/index.js';
 import locale from 'element-ui/src/locale';
-import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 import CommonUtil from 'element-ui/src/utils/CommonUtil.js';
 import LocalStorageUtil from 'element-ui/src/utils/LocalStorageUtil.js';
-import ListView from '../packages/list-view/index.js';
+import DateUtil from 'element-ui/src/utils/DateUtil.js';
+import NumberUtil from 'element-ui/src/utils/NumberUtil.js';
+import SessionStorageUtil from 'element-ui/src/utils/SessionStorageUtil.js';
+import Filter from 'element-ui/src/filters/index.js';
+import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
 
 const components = [
   Pagination,
@@ -182,10 +186,8 @@ const components = [
   Result,
   DialogWrapper,
   DrawerWrapper,
-  CollapseTransition,
-  CommonUtil,
-  LocalStorageUtil,
-  ListView
+  ListView,
+  CollapseTransition
 ];
 
 const install = function(Vue, opts = {}) {
@@ -199,6 +201,7 @@ const install = function(Vue, opts = {}) {
   Vue.use(InfiniteScroll);
   Vue.use(Loading.directive);
 
+  Filter.init(Vue);
   Vue.prototype.$ELEMENT = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
@@ -227,6 +230,11 @@ export default {
   CollapseTransition,
   Loading,
   JsDialog: Dialog.Dialog,
+  CommonUtil,
+  LocalStorageUtil,
+  DateUtil,
+  NumberUtil,
+  SessionStorageUtil,
   Pagination,
   Dialog,
   Autocomplete,
